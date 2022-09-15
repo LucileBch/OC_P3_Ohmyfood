@@ -14,47 +14,46 @@
 <body>
     <!--HEADER-->
     <header>
-        <a href="#"><img src="img/logo/ohmyfood.png" alt="logo ohmyfood"></a>
-        <!-- Mettre la recherche dans la section 1-->
+        <a href="#"><img src="img/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo"></a>
     </header> 
 
     <!--MAIN-->
     <main>
 
     <!-- MAIN SECTION 1 : Recherche -->
-        <section>
+        <section class="section-recherche">
             <form method="post" action="form.php">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Paris, Belleville"/>
+                <i class="fa-solid fa-location-dot section-recherche__icone"></i>
+                <input type="text" placeholder="Paris, Belleville" class="section-recherche__localisation"/>
             </form>
         </section>
 
     <!-- MAIN SECTION 2 : Entreprise et Fonctionnement -->
         <section>
-            <!--DIVISION Entreprise-->
-            <article>
-                <h1>Réserver le menu qui vous convient</h1>
-                <p>Découvre des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a href="#">Explorer nos restaurants</a>
+            <!--ARTICLE Entreprise-->
+            <article class="conteneur-entreprise">
+                <h2>Réserver le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <a href="#" class="conteneur-entreprise__bouton">Explorer nos restaurants</a>
             </article>
 
             <!--ASIDE Fonctionnement-->
-            <aside>
+            <aside class="conteneur-fonctionnement">
                 <h2>Fonctionnement</h2>
-                <a href="#">
-                    <p>1</p>
+                <a href="#" class="conteneur-fonctionnement__etape">
+                    <p class="numero">1</p>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>Choisissez un restaurant</p>
                 </a>
 
-                <a href="#">
-                    <p>2</p>
+                <a href="#" class="conteneur-fonctionnement__etape">
+                    <p class="numero">2</p>
                     <i class="fa-solid fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </a>
 
-                <a href="#">
-                    <p>3</p>
+                <a href="#" class="conteneur-fonctionnement__etape">
+                    <p class="numero">3</p>
                     <i class="fa-sharp fa-solid fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </a>
@@ -62,13 +61,13 @@
         </section>
 
         <!-- MAIN SECTION 3 : Restaurants // VENIR METTRE LES LIENS PAGES MENUS-->
-        <section>
+        <section class="conteneur-restaurant">
             <h2>Restaurants</h2>
 
-            <div>
-                <article>
+            <div class="conteneur-restaurant__choix">
+                <article class="conteneur-restaurant__article">
                     <a href="#">
-                        <img src="img/restaurants/lapalettedugout.jpg" alt="restaurant la palette du gout"/>
+                        <img src="img/restaurants/lapalettedugoutmodif.jpg" alt="restaurant la palette du gout"/>
                         <p>Nouveau</p>
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
@@ -76,9 +75,9 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="conteneur-restaurant__article">
                     <a href="#">
-                        <img src="img/restaurants/lanoteenchantee.jpg" alt="restaurant la note enchantee"/>
+                        <img src="img/restaurants/lanoteenchanteemodif.jpg" alt="restaurant la note enchantee"/>
                         <p>Nouveau</p>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
@@ -86,9 +85,9 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="conteneur-restaurant__article">
                     <a href="menu3.html">
-                        <img src="img/restaurants/alafrancaise.jpg" alt="restaurant à la française"/>
+                        <img src="img/restaurants/alafrancaisemodif.jpg" alt="restaurant à la française"/>
                         <p>Nouveau</p>
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
@@ -96,9 +95,9 @@
                     </a>
                 </article>
 
-                <article>
+                <article class="conteneur-restaurant__article">
                     <a href="#">
-                        <img src="img/restaurants/ledelicedessens.jpg" alt="restaurant le délice des sens"/>
+                        <img src="img/restaurants/ledelicedessensmodif.jpg" alt="restaurant le délice des sens"/>
                         <p>Nouveau</p>
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
@@ -111,11 +110,11 @@
 
 <!--FOOTER-->
     <footer>
-        <img src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+        <img src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="footer__logo"/>
 
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+        <ul class="footer__nav">
+            <li><a href="#"><i class="fa-solid fa-utensils footer__icone"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle footer__icone2"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto#">Contact</a></li>
         </ul>

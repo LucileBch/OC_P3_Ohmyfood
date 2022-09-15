@@ -14,16 +14,19 @@
 <body>
 <!--HEADER-->
     <header>
-        <a href="../index.html"><img src="img/logo/ohmyfood.png" alt="logo ohmyfood"></a>
-        <img src="img/restaurants/alafrancaise.jpg" alt="photo restaurant à la française"/>
-        <!--mettre le titre 1 et le i ainsi que l'image dans une section-->
-        <h1>À la française</h1>
-        <i class="fa-regular fa-heart"></i>
-    </header>
+        <a href="#"><img src="img/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo"></a>
+    </header> 
 
 <!--MAIN-->
     <main>
-        <!--MAIN SECTION 1 : Entrées-->
+        <!--MAIN SECTION 1 : Titre-->
+        <section>
+            <img src="img/restaurants/alafrancaise.jpg" alt="photo restaurant à la française"/>
+            <h1>À la française</h1>
+            <i class="fa-regular fa-heart"></i>
+        </section>
+
+        <!--MAIN SECTION 2 : Entrées-->
         <section>
             <h2>ENTRÉES</h2>
                 <article>
@@ -48,7 +51,7 @@
                 </article>
         </section>
 
-        <!--MAIN SECTION 2 : Plats-->
+        <!--MAIN SECTION 3 : Plats-->
         <section>
             <h2>PLATS</h2>
                 <article>
@@ -73,7 +76,7 @@
                 </article>
         </section>
 
-        <!--MAIN SECTION 3 : Dessert-->
+        <!--MAIN SECTION 4 : Dessert-->
         <section>
             <h2>DESSERTS</h2>
                 <article>
@@ -103,11 +106,11 @@
 
 <!--FOOTER-->
     <footer>
-        <img src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+        <img src="img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="footer__logo"/>
 
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+        <ul class="footer__nav">
+            <li><a href="#"><i class="fa-solid fa-utensils footer__icone"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle footer__icone2"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="mailto#">Contact</a></li>
         </ul>
