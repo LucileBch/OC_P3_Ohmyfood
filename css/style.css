@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
+
+/* Mobile First */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER Mobile First */
+header {
+    text-align: center;
+    box-shadow: 10px 10px 0px black;
+}
+
+.header__logo {
+    width: 40%;
+    margin: 20px 0 10px 0;
+}
+
+/*MAIN SECTION 1 RECHERCHE - Mobile First */
+.section-recherche {
+    background-color: #eaeaea;
+}
+
+.section-recherche form {
+    text-align: center;
+    padding: 15px;
+}
+
+.section-recherche__icone {
+    font-size: 22px;
+}
+
+.section-recherche__localisation {
+    border: none;
+    background-color: #eaeaea;
+}
+
+input::placeholder {
+    color: black;
+}
+
+/* MAIN SECTION 2 ENTREPRISE ET FONCTIONNEMENT - Mobile First */
+.conteneur-entreprise {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 40px 0 80px 0;
+}
+
+.conteneur-entreprise h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.conteneur-entreprise p {
+    margin-bottom: 50px;
+}
+
+.conteneur-entreprise__bouton {
+    padding: 15px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: 2px 10px 10px lightgrey;
+    color: white;
+}
+
+.conteneur-fonctionnement {
+    padding-bottom: 50px;
+}
+
+.conteneur-fonctionnement h2, .conteneur-restaurant h2 {
+    padding: 50px 0 10px 40px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.conteneur-fonctionnement__etape {
+    display: flex;
+    padding: 30px 0;
+    margin: 30px 45px;
+    background-color: #f6f6f6;
+    border: 2px #f6f6f6 solid;
+    border-radius: 20px;
+    box-shadow: 2px 10px 10px lightgrey;
+    align-items: center;
+}
+
+.conteneur-fonctionnement__etape .numero {
+    color: white;
+    border: 2px #9356DC solid;
+    background-color: #9356DC;
+    border-radius: 35px;
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+    left: -17px;
+}
+
+.conteneur-fonctionnement__etape i {
+    color: #7e7e7e;
+    font-size: 25px;
+    margin: 0 50px 0 20px;
+}
+
+/* MAIN SECTION 3 RESTAURANTS - Mobile First */
+.conteneur-restaurant {
+    background-color: #f6f6f6;
+}
+
+.conteneur-restaurant__article {
+    background-color: white;
+    border: 2px #f6f6f6 solid;
+    border-radius: 20px/20px;
+    box-shadow: 2px 10px 10px lightgrey;
+    margin: 3% 5%;
+}
+
+.conteneur-restaurant__article img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.conteneur-restaurant__article h3 {
+    font-weight: bold;
+}
+
+/*FOOTER - Mobile First */
+footer {
+    background-color: #353535;
+}
+
+.footer__logo {
+    margin : 25px 0 20px 40px;
+}
+
+footer a {
+    color: white;
+}
+
+.footer__nav {
+    line-height: 35px;
+    padding-bottom: 40px;
+}
+
+.footer__icone {
+    font-size: 20px;
+    margin-right: 22px;
+}
+
+.footer__icone2 {
+    font-size: 20px;
+    margin-right: 15px;
+}
