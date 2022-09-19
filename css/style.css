@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-size: 18px;
 }
 
 body {
@@ -20,7 +19,7 @@ ul {
     list-style-type: none;
 }
 
-/* HEADER Mobile First */
+/* HEADER Mobile First - commun page accueil & menu*/
 header {
     text-align: center;
 }
@@ -30,7 +29,7 @@ header {
     margin: 20px 0 10px 0;
 }
 
-/*MAIN SECTION 1 RECHERCHE - Mobile First */
+/*MAIN SECTION 1 RECHERCHE - Mobile First - page accueil*/
 .section-recherche {
     background-color: #eaeaea;
 }
@@ -58,7 +57,7 @@ input::placeholder {
     color: black;
 }
 
-/* MAIN SECTION 2 ENTREPRISE ET FONCTIONNEMENT - Mobile First */
+/* MAIN SECTION 2 ENTREPRISE ET FONCTIONNEMENT - Mobile First - page accueil*/
 .conteneur-entreprise {
     background-color: #f6f6f6;
     text-align: center;
@@ -74,13 +73,29 @@ input::placeholder {
     margin-bottom: 50px;
 }
 
-.conteneur-entreprise__bouton {
-    padding: 15px;
+/*bouton page accueil et page menu*/
+.conteneur-entreprise__bouton, .conteneur-commander__btn{
+    padding: 20px;
     border-radius: 40px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow: 2px 10px 10px lightgrey;
     color: white;
+    font-size: 20px;
 }
+
+.conteneur-commander{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.conteneur-commander__btn{
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
+}
+/*fin style bouton accueil et menu*/
+
 
 .conteneur-fonctionnement {
     padding-bottom: 50px;
@@ -122,7 +137,7 @@ input::placeholder {
     margin: 0 50px 0 20px;
 }
 
-/* MAIN SECTION 3 RESTAURANTS - Mobile First */
+/* MAIN SECTION 3 RESTAURANTS - Mobile First - page accueil*/
 .conteneur-restaurant {
     background-color: #f6f6f6;
     padding-bottom: 60px;
@@ -184,8 +199,93 @@ input::placeholder {
     font-size: 30px;
 }
 
+/*MAIN GENERAL - Mobil first - apge menu*/
+main{
+    background-color: #f6f6f6;
+}
 
-/*FOOTER - Mobile First */
+/*MAIN SECTION 1 TITRE - Mobile First - page menu*/
+.conteneur-titre{
+    position: relative;
+}
+
+.conteneur-titre img{
+    width: 100%;
+}
+
+.conteneur-titre__nom{
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px 30px 20px;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+}
+
+.conteneur-titre__nom h1{
+    font-family: 'shrikhand';
+    font-size: 30px;
+}
+
+.conteneur-titre i{
+    font-size: 30px;
+}
+
+/*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
+.conteneur-menu{
+    padding: 25px 0;
+    display: grid;
+    row-gap: 20px;
+}
+
+.conteneur-menu h2{
+    width: 15%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px #99E2D0 solid;
+}
+
+.conteneur-menu__choix{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding: 15px;
+    box-shadow: 2px 10px 10px lightgrey;
+    position: relative;
+}
+.conteneur-menu__choix h3{
+    padding-bottom: 10px;
+}
+
+.conteneur-menu__choix .prix{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.conteneur-menu__choix .check{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 27px;
+    color: white;
+    background-color: #99E2D0;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/*FOOTER - Mobile First - commun page accueil & menu*/
 footer {
     background-color: #353535;
 }
