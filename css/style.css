@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 a {
@@ -22,23 +23,23 @@ ul {
 /* HEADER Mobile First - commun page accueil & menu*/
 header {
     text-align: center;
+    padding: 20px 0 10px 0;
 }
 
 .header__logo {
     width: 45%;
-    margin: 20px 0 10px 0;
 }
 
 /*MAIN SECTION 1 RECHERCHE - Mobile First - page accueil*/
 .section-recherche {
-    background-color: #eaeaea;
+    background-color: #EAEAEA;
 }
 
 .section-recherche form {
     display: flex;
     justify-content: center;
     padding: 15px;
-    box-shadow: inset 0px 5px 2px -2px #cdcdcd;
+    box-shadow: inset 0px 5px 2px -2px #CFCFCF;
 }
 
 .section-recherche__icone {
@@ -49,7 +50,7 @@ header {
 
 .section-recherche__localisation {
     border: none;
-    background-color: #eaeaea;
+    background-color: #EAEAEA;
     font-size: 20px;
 }
 
@@ -59,18 +60,20 @@ input::placeholder {
 
 /* MAIN SECTION 2 ENTREPRISE ET FONCTIONNEMENT - Mobile First - page accueil*/
 .conteneur-entreprise {
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     text-align: center;
-    padding: 40px 0 80px 0;
+    padding: 40px 40px 80px 40px;
 }
 
 .conteneur-entreprise h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .conteneur-entreprise p {
     margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 /*bouton page accueil et page menu*/
@@ -98,35 +101,34 @@ input::placeholder {
 
 
 .conteneur-fonctionnement {
-    padding-bottom: 50px;
+    padding: 60px 40px;
+    background-color: #FFFFFF;
 }
 
 .conteneur-fonctionnement h2, .conteneur-restaurant h2 {
-    padding: 50px 0 25px 40px;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .conteneur-fonctionnement__etape {
     display: flex;
-    padding: 30px 0;
-    margin: 30px;
-    background-color: #f6f6f6;
-    border: 2px #f6f6f6 solid;
+    padding: 25px 0;
+    margin: 30px 0;
+    background-color: #F6F6F6;
     border-radius: 20px;
-    box-shadow: 2px 10px 10px lightgrey;
+    box-shadow: 2px 6px 20px 3px lightgrey;
     align-items: center;
 }
 
 .conteneur-fonctionnement__etape .numero {
-    color: white;
+    color: #FFFFFF;
     border: 2px #9356DC solid;
     background-color: #9356DC;
     border-radius: 35px/35px;
     width: 35px;
     height: 35px;
-    padding-left: 10px;
-    padding-top: 5px;
+    text-align: center;
+    padding: 6px;
     position: relative;
     left: -17px;
 }
@@ -137,47 +139,44 @@ input::placeholder {
     margin: 0 50px 0 20px;
 }
 
-/* MAIN SECTION 3 RESTAURANTS - Mobile First - page accueil*/
-.conteneur-restaurant {
-    background-color: #f6f6f6;
-    padding-bottom: 60px;
+.conteneur-fonctionnement__etape--infos{
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.conteneur-restaurant__choix {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px 300px;
-    margin: 0% 5%;
-    gap: 25px;
+/* MAIN SECTION 3 RESTAURANTS - Mobile First - page accueil*/
+.conteneur-restaurant {
+    background-color: #F6F6F6;
+    padding: 60px 40px;
 }
 
 .conteneur-restaurant__article {
-    background-color: white;
-    border: 2px #f6f6f6 solid;
+    background-color: #FFFFFF;
     border-radius: 20px/20px;
     box-shadow: 2px 10px 10px lightgrey;
     position: relative;
+    margin: 25px 0;
 }
 
 .conteneur-restaurant__article img {
     width: 100%;
-    height: 75%;
+    height: 230px;
     border-radius: 20px 20px 0 0;
-    padding-bottom: 15px;
     object-fit: cover;
 }
 
-.conteneur-restaurant__article h3 {
-    font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+.conteneur-restaurant__article--infos {
+    padding: 15px;
+    line-height: 30px;
+    font-size: 20px;
 }
 
-.conteneur-restaurant__article .lieu
-{
-    font-size: 22px;
-    padding-left: 20px;
+.conteneur-restaurant__article--infos h3{
+    font-weight: 500;
+}
+
+.conteneur-restaurant__article--infos p{
+    font-weight: 300;
 }
 
 .conteneur-restaurant__article .nouveau {
@@ -188,8 +187,8 @@ input::placeholder {
     border: 2px #99E2D0 solid;
     border-radius: 3px;
     color: #208765;
-    font-weight: bold;
-    padding: 5px 15px;
+    font-weight: 400;
+    padding: 6px 16px;
 }
 
 .conteneur-restaurant__article i {
@@ -201,7 +200,7 @@ input::placeholder {
 
 /*MAIN GENERAL - Mobil first - apge menu*/
 main{
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
 }
 
 /*MAIN SECTION 1 TITRE - Mobile First - page menu*/
@@ -214,16 +213,15 @@ main{
 }
 
 .conteneur-titre__nom{
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 40px 30px 20px;
+    padding: 30px 20px;
     border-radius: 50px 50px 0 0;
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 15%;
 }
 
 .conteneur-titre__nom h1{
@@ -237,24 +235,22 @@ main{
 
 /*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
 .conteneur-menu{
-    padding: 25px 0;
-    display: grid;
-    row-gap: 20px;
+    padding: 15px 0;
 }
 
 .conteneur-menu h2{
-    width: 15%;
+    width: 10%;
     margin-left: 20px;
     padding-bottom: 10px;
     border-bottom: 4px #99E2D0 solid;
 }
 
 .conteneur-menu__choix{
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 20px;
-    margin: 0 20px;
+    margin: 20px;
     padding: 15px;
-    box-shadow: 2px 10px 10px lightgrey;
+    box-shadow: 2px 6px 20px 3px lightgrey;
     position: relative;
 }
 .conteneur-menu__choix h3{
@@ -288,20 +284,21 @@ main{
 /*FOOTER - Mobile First - commun page accueil & menu*/
 footer {
     background-color: #353535;
+    padding: 40px;
 }
 
 .footer__logo {
-    margin : 25px 0 20px 40px;
     width: 140px;
 }
 
 footer a {
-    color: white;
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
 .footer__nav {
     line-height: 35px;
-    padding-bottom: 40px;
+    padding: 20px 0;
 }
 
 .footer__icone {
