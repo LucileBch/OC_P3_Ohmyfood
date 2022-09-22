@@ -27,7 +27,7 @@ header {
 }
 
 .header__logo {
-    width: 45%;
+    width: 250px;
 }
 
 /*MAIN SECTION 1 RECHERCHE - Mobile First - page accueil*/
@@ -95,7 +95,6 @@ input::placeholder {
 .conteneur-commander__btn{
     padding-left: 60px;
     padding-right: 60px;
-    border: none;
 }
 /*fin style bouton accueil et menu*/
 
@@ -204,6 +203,25 @@ main{
 }
 
 /*MAIN SECTION 1 TITRE - Mobile First - page menu*/
+.conteneur-header__menu{
+    display: flex;
+    align-items: center;
+}
+
+.conteneur-header__menu i{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+}
+
+.header-menu__logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 60px;
+}
+
 .conteneur-titre{
     position: relative;
 }
@@ -217,7 +235,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 30px 10px;
     border-radius: 50px 50px 0 0;
     position: absolute;
     bottom: 0px;
@@ -226,35 +244,45 @@ main{
 
 .conteneur-titre__nom h1{
     font-family: 'shrikhand';
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 100;
+    margin-left: 20px;
 }
 
 .conteneur-titre i{
     font-size: 30px;
+    margin-right: 50px;
 }
 
 /*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
 .conteneur-menu{
-    padding: 15px 0;
+    padding: 20px 30px;
 }
 
 .conteneur-menu h2{
     width: 10%;
-    margin-left: 20px;
     padding-bottom: 10px;
     border-bottom: 4px #99E2D0 solid;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .conteneur-menu__choix{
     background-color: #FFFFFF;
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 15px;
     box-shadow: 2px 6px 20px 3px lightgrey;
     position: relative;
 }
 .conteneur-menu__choix h3{
-    padding-bottom: 10px;
+    line-height: 35px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.conteneur-menu__choix .infos{
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .conteneur-menu__choix .prix{
