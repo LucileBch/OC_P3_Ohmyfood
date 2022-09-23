@@ -77,7 +77,7 @@ input::placeholder {
 }
 
 /*bouton page accueil et page menu*/
-.conteneur-entreprise__bouton, .conteneur-commander__btn{
+.conteneur-entreprise__bouton, .conteneur-commander__btn {
     padding: 20px;
     border-radius: 40px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -86,13 +86,13 @@ input::placeholder {
     font-size: 20px;
 }
 
-.conteneur-commander{
+.conteneur-commander {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 80px;
 }
 
-.conteneur-commander__btn{
+.conteneur-commander__btn {
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -118,6 +118,10 @@ input::placeholder {
     box-shadow: 2px 6px 20px 3px lightgrey;
     align-items: center;
 }
+.conteneur-fonctionnement__etape:hover {
+    background-color: #F5EDFF;
+    box-shadow: 2px 6px 20px 3px grey;
+}
 
 .conteneur-fonctionnement__etape .numero {
     color: #FFFFFF;
@@ -138,7 +142,11 @@ input::placeholder {
     margin: 0 50px 0 20px;
 }
 
-.conteneur-fonctionnement__etape--infos{
+.conteneur-fonctionnement__etape:hover i {
+    color: #9356DC;
+}
+
+.conteneur-fonctionnement__etape--infos {
     font-size: 20px;
     font-weight: 500;
 }
@@ -170,11 +178,11 @@ input::placeholder {
     font-size: 20px;
 }
 
-.conteneur-restaurant__article--infos h3{
+.conteneur-restaurant__article--infos h3 {
     font-weight: 500;
 }
 
-.conteneur-restaurant__article--infos p{
+.conteneur-restaurant__article--infos p {
     font-weight: 300;
 }
 
@@ -190,47 +198,66 @@ input::placeholder {
     padding: 6px 16px;
 }
 
-.conteneur-restaurant__article i {
+.conteneur-restaurant__article--coeurvide {
     position: absolute;
     right: 25px;
     bottom: 35px;
     font-size: 30px;
+    opacity: 1;
+    z-index: 1;
 }
 
-/*MAIN GENERAL - Mobil first - apge menu*/
+.conteneur-restaurant__article--coeurplein {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    font-size: 30px;
+    color: transparent;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    transition: opacity 400ms;
+    opacity: 0;
+    z-index: 2;
+}
+
+.conteneur-restaurant__article--coeurplein:hover {
+    opacity: 1;
+}
+
+/*MAIN GENERAL - Mobile first - page menu*/
 main{
     background-color: #F6F6F6;
 }
 
 /*MAIN SECTION 1 TITRE - Mobile First - page menu*/
-.conteneur-header__menu{
+.conteneur-header__menu {
     display: flex;
     align-items: center;
 }
 
-.conteneur-header__menu i{
+.conteneur-header__menu i {
     font-size: 30px;
     display: flex;
     justify-content: flex-end;
     width: 60px;
 }
 
-.header-menu__logo{
+.header-menu__logo {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-right: 60px;
 }
 
-.conteneur-titre{
+.conteneur-titre {
     position: relative;
 }
 
-.conteneur-titre img{
+.conteneur-titre img {
     width: 100%;
 }
 
-.conteneur-titre__nom{
+.conteneur-titre__nom {
     background-color: #F6F6F6;
     display: flex;
     align-items: center;
@@ -242,24 +269,24 @@ main{
     width: 100%;
 }
 
-.conteneur-titre__nom h1{
+.conteneur-titre__nom h1 {
     font-family: 'shrikhand';
     font-size: 32px;
     font-weight: 100;
     margin-left: 20px;
 }
 
-.conteneur-titre i{
+.conteneur-titre i {
     font-size: 30px;
     margin-right: 50px;
 }
 
 /*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
-.conteneur-menu{
+.conteneur-menu {
     padding: 20px 30px;
 }
 
-.conteneur-menu h2{
+.conteneur-menu h2 {
     width: 10%;
     padding-bottom: 10px;
     border-bottom: 4px #99E2D0 solid;
@@ -267,7 +294,7 @@ main{
     font-weight: 400;
 }
 
-.conteneur-menu__choix{
+.conteneur-menu__choix {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px 0;
@@ -275,17 +302,22 @@ main{
     box-shadow: 2px 6px 20px 3px lightgrey;
     position: relative;
 }
-.conteneur-menu__choix h3{
+
+.conteneur-menu__choix:hover {
+    box-shadow: 2px 6px 20px 3px grey;
+}
+
+.conteneur-menu__choix h3 {
     line-height: 35px;
     font-size: 23px;
     font-weight: 500;
 }
-.conteneur-menu__choix .infos{
+.conteneur-menu__choix .infos {
     font-size: 20px;
     font-weight: 100;
 }
 
-.conteneur-menu__choix .prix{
+.conteneur-menu__choix .prix {
     position: absolute;
     right: 30px;
     bottom: 15px;
@@ -293,7 +325,7 @@ main{
     font-size: 19px;
 }
 
-.conteneur-menu__choix .check{
+.conteneur-menu__choix .check {
     position: absolute;
     right: 0px;
     bottom: 0px;
