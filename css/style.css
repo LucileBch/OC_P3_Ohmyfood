@@ -20,6 +20,51 @@ ul {
     list-style-type: none;
 }
 
+/*Mobile First - Animation Loading Spinner*/
+.conteneur-loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 234, 234, 0.8);
+    position: fixed;
+    z-index: 3;
+    animation: loading 3s;
+}
+
+.conteneur-loading__spinner {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    z-index: 4;
+    border-top: 10px #9356DC double;
+    border-right: 10px #9356DC dashed;
+    border-bottom: 10px #FF79DA double;
+    border-left: 10px #FF79DA dashed;
+    border-radius: 80px;
+    top: 40%;
+    left: 40%;
+    animation: spinner 2s linear 2;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* HEADER Mobile First - commun page accueil & menu*/
 header {
     text-align: center;
