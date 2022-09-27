@@ -497,8 +497,8 @@ footer a {
     margin-right: 15px;
 }
 
-/*MQ TABLETTE 769px > 992px -- PAGE ACCUEIL*/
-@media all and (min-width: 769px) and (max-width: 992px) {
+/*MQ TABLETTE 767px > 992px -- PAGE ACCUEIL*/
+@media all and (min-width: 767px) and (max-width: 992px) {
 
     .conteneur-general {
         display: flex;
@@ -554,16 +554,16 @@ footer a {
         width: 50%;
         display: flex;
         flex-direction: column;
-        padding: 40px 200px;
+        padding: 80px 100px;
         gap: 40px;
-        justify-content: center;
     }
 
     .conteneur-entreprise p, .conteneur-entreprise h2 {
         margin-bottom: 0;
     }
+
     .conteneur-entreprise__bouton {
-        margin: 0 100px;
+        margin: 0 50px;
     }
 
     .conteneur-fonctionnement__etape {
@@ -593,5 +593,15 @@ footer a {
     .footer__nav {
         display: flex;
         gap: 100px;
+    }
+
+/*MQ DESKTOP 993 > 1920px -- Page Menu*/
+    .conteneur-menu__liste {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .conteneur-commander {
+        padding-top: 50px;
     }
 }
