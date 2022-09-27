@@ -496,3 +496,102 @@ footer a {
     font-size: 20px;
     margin-right: 15px;
 }
+
+/*MQ TABLETTE 769px > 992px -- PAGE ACCUEIL*/
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+    .conteneur-general {
+        display: flex;
+        text-align: center;
+    }
+    .conteneur-entreprise {
+        background-color: white;
+    }
+
+    .conteneur-entreprise, .conteneur-fonctionnement {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px
+    }
+
+    .conteneur-entreprise p, .conteneur-entreprise h2 {
+        margin-bottom: 0;
+    }
+
+    .conteneur-fonctionnement__etape {
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .conteneur-restaurant__choix {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .conteneur-restaurant__article {
+        margin: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/*MQ DESKTOP 993 > 1920px -- Page Accueil*/
+@media all and (min-width: 993px) and (max-width: 1920px) {
+    .conteneur-general {
+        display: flex;
+        text-align: center;
+    }
+    .conteneur-entreprise {
+        background-color: white;
+    }
+
+    .conteneur-entreprise, .conteneur-fonctionnement {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 200px;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .conteneur-entreprise p, .conteneur-entreprise h2 {
+        margin-bottom: 0;
+    }
+    .conteneur-entreprise__bouton {
+        margin: 0 100px;
+    }
+
+    .conteneur-fonctionnement__etape {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    .conteneur-restaurant__choix {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+    }
+
+    .conteneur-restaurant__article img {
+        height: 400px;
+    }
+
+    .conteneur-restaurant__article .nouveau {
+        padding: 20px 35px;
+        font-size: 26px;
+    }
+
+    .conteneur-restaurant__article--infos {
+        padding: 20px;
+    }
+
+    .footer__nav {
+        display: flex;
+        gap: 100px;
+    }
+}
