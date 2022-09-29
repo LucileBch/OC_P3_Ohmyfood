@@ -27,21 +27,21 @@ ul {
     background-color: rgba(234, 234, 234, 0.8);
     position: fixed;
     z-index: 3;
+    display: flex;
+    justify-content: center;
     animation: loading 2.7s forwards;
 }
 
 .conteneur-loading__spinner {
     width: 150px;
     height: 150px;
-    position: fixed;
     z-index: 4;
     border-top: 10px #9356DC double;
     border-right: 10px #9356DC dashed;
     border-bottom: 10px #FF79DA double;
     border-left: 10px #FF79DA dashed;
     border-radius: 80px;
-    top: 40%;
-    left: 40%;
+    align-self: center;
     animation: spinner 0.9s linear 3;
 }
 
@@ -139,16 +139,15 @@ input::placeholder {
 
 .conteneur-commander {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 
 .conteneur-commander__btn {
     padding-left: 60px;
     padding-right: 60px;
 }
-/*fin style bouton accueil et menu*/
 
+/*fin style bouton accueil et menu*/
 
 .conteneur-fonctionnement {
     padding: 60px 40px;
@@ -169,9 +168,12 @@ input::placeholder {
     box-shadow: 2px 6px 20px 3px lightgrey;
     align-items: center;
 }
+
 .conteneur-fonctionnement__etape:hover {
     background-color: #F5EDFF;
     box-shadow: 2px 6px 20px 3px grey;
+    transform: scale(1.03);
+    transition: all 400ms;
 }
 
 .conteneur-fonctionnement__etape .numero {
@@ -214,6 +216,11 @@ input::placeholder {
     box-shadow: 2px 10px 10px lightgrey;
     position: relative;
     margin: 25px 0;
+}
+
+.conteneur-restaurant__article:hover {
+    transition: transform 600ms;
+    transform: scale(1.03);
 }
 
 .conteneur-restaurant__article img {
@@ -266,9 +273,10 @@ input::placeholder {
     color: transparent;
     background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
-    transition: opacity 400ms;
+    transition: opacity 600ms;
     opacity: 0;
     z-index: 2;
+    cursor: pointer;
 }
 
 .conteneur-restaurant__article--coeurplein:hover {
@@ -306,6 +314,8 @@ main{
 
 .conteneur-titre img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .conteneur-titre__nom {
@@ -328,8 +338,7 @@ main{
 }
 
 .conteneur-titre i {
-    font-size: 30px;
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 /*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
@@ -337,8 +346,12 @@ main{
     padding: 20px 30px;
 }
 
+.conteneur-menu__carte {
+    padding-bottom: 40px;
+}
+
 .conteneur-menu h2 {
-    width: 10%;
+    width: 50px;
     padding-bottom: 10px;
     border-bottom: 4px #99E2D0 solid;
     font-size: 20px;
@@ -349,37 +362,41 @@ main{
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px 0;
-    padding: 15px;
     box-shadow: 2px 6px 20px 3px lightgrey;
     position: relative;
-    animation: plat 2s;
+    overflow: hidden;
+    display: flex;
+    animation: plat 1.8s both;
 }
 
+/* DEBUT ANIMATION Apparition liste plats - page menu*/
 .numero1 {
-    animation-delay: 0.2s;
-    animation-fill-mode: backwards;
+    animation-delay: 300ms;
 }
 
 .numero2 {
-    animation-delay: 0.4s;
-    animation-fill-mode: backwards;
+    animation-delay: 600ms;
 }
 
 .numero3 {
-    animation-delay: 0.6s;
-    animation-fill-mode: backwards;
+    animation-delay: 900ms;
+}
+.numero4 {
+    animation-delay: 1200ms;
 }
 
+/*ANIMATION Apparition liste plats - page menu*/
 @keyframes plat {
     0% {
-        margin-top: 40px;
+        transform: translateY(50%);
         opacity: 0;
     }
     100% {
-        margin-top: 20px;
+        transform: translateY(0%);
         opacity: 1;
     }
 }
+/*FIN ANIMATION Apparition liste plats - page menu*/
 
 .conteneur-menu__choix:hover {
     box-shadow: 2px 6px 20px 3px grey;
@@ -387,85 +404,61 @@ main{
 }
 
 .conteneur-menu__choix--descriptif {
-    width: 350px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 15px;
 }
 
-/*ANIMATION PLAT*/
-.conteneur-menu__choix:hover .conteneur-menu__choix--validation {
-    transition-duration: 0.8s;
-    right: 0px;
-}
-
-.conteneur-menu__choix:hover .conteneur-menu__choix--descriptif {
-    width: 260px;
-}
-
-.conteneur-menu__choix:hover .conteneur-menu__choix--descriptif h3, p {
+.conteneur-menu__choix h3 {
+    line-height: 35px;
+    font-size: 23px;
+    font-weight: 500;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.conteneur-menu__choix:hover .conteneur-menu__choix--check {
-    transition: all 0.3s;
-    transform: scaleX(1);
-    opacity: 1;
+.conteneur-menu__choix .infos {
+    font-size: 20px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.conteneur-menu__choix:hover .prix {
-    transition: all 0.3s;
-    right: 120px;
+.conteneur-menu__choix--prix {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 15px;
+}
+
+.conteneur-menu__choix--check {
+    font-size: 27px;
+    color: white;
+    background-color: #99E2D0;
+    width: 100px;
+    margin-right: -100px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    transition: margin-right 0.7s;
+}
+
+.conteneur-menu__choix:hover .conteneur-menu__choix--check {
+    margin-right: 0;
 }
 
 .conteneur-menu__choix:hover .fa-circle-check {
     transition: transform 0.5s ease-in 0.1s;
     transform: rotate(360deg);
 }
-/*ANIMATION PLAT*/
 
-.conteneur-menu__choix h3 {
-    line-height: 35px;
-    font-size: 23px;
-    font-weight: 500;
-}
-
-.conteneur-menu__choix .infos {
-    font-size: 20px;
-    font-weight: 100;
-}
-
-.conteneur-menu__choix--validation {
-    position: absolute;
-    right: -50px;
-    bottom: 0px;
-    width: 130px;
-    height: 100%;
-}
-
-.conteneur-menu__choix--validation .prix {
-    position: absolute;
-    right: 70px;
-    bottom: 15px;
-    font-weight: bold;
-    font-size: 19px;
-}
-
-.conteneur-menu__choix--check {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    font-size: 27px;
-    color: white;
-    background-color: #99E2D0;
-    width: 100px;
-    height: 100%;
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scaleX(0);
-    opacity: 0;
-}
 
 /*FOOTER - Mobile First - commun page accueil & menu*/
 footer {
@@ -485,6 +478,10 @@ footer a {
 .footer__nav {
     line-height: 35px;
     padding: 20px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer__icone {
@@ -590,18 +587,33 @@ footer a {
         padding: 20px;
     }
 
+    footer {
+        text-align: center;
+    }
+
+    .footer__logo {
+        width: 200px;
+        margin: 20px;
+    }
+
     .footer__nav {
         display: flex;
-        gap: 100px;
+        justify-content: space-evenly;
     }
 
 /*MQ DESKTOP 993 > 1920px -- Page Menu*/
-    .conteneur-menu__liste {
-        display: flex;
-        justify-content: space-between;
+    .conteneur-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+
+    .conteneur-titre img {
+        height: 500px;
     }
 
     .conteneur-commander {
         padding-top: 50px;
     }
+
 }
