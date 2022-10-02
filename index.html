@@ -3,9 +3,9 @@
     
 <!--HEAD-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="normalize" href="css/normalize.css">
+    <link rel="normalize" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/0a1d6f439a.js" crossorigin="anonymous"></script>
     <title>Ohmyfood!</title>
@@ -20,31 +20,25 @@
     <!--HEADER-->
     <header>
         <a href="#"><img src="img/logo/ohmyfood.png" alt="logo ohmyfood" class="header__logo"></a>
-    </header> 
-
-    <!--MAIN-->
-    <main>
-
-    <!-- MAIN SECTION 1 : Recherche -->
-        <section class="section-recherche">
+        <div class="section-recherche">
             <form method="post" action="form.php">
                 <i class="fa-solid fa-location-dot section-recherche__icone"></i>
                 <input type="text" placeholder="Paris, Belleville" class="section-recherche__localisation"/>
             </form>
-        </section>
+        </div>
+        <div class="conteneur-entreprise">
+            <h1>Réserver le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a href="#" class="conteneur-entreprise__bouton">Explorer nos restaurants</a>
+        </div>
+    </header> 
 
-    <!-- MAIN SECTION 2 : Entreprise et Fonctionnement -->
-        <section class="conteneur-general">
-            <!--ARTICLE Entreprise-->
-            <article class="conteneur-entreprise">
-                <h2>Réserver le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a href="#" class="conteneur-entreprise__bouton">Explorer nos restaurants</a>
-            </article>
-
-            <!--ASIDE Fonctionnement-->
-            <aside class="conteneur-fonctionnement">
-                <h2>Fonctionnement</h2>
+    <!--MAIN-->
+    <main>
+    <!-- MAIN SECTION 1 : Fonctionnement -->
+        <section class="conteneur-fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="conteneur-fonctionnement__liste">
                 <a href="#" class="conteneur-fonctionnement__etape">
                     <p class="numero">1</p>
                     <i class="fa-solid fa-mobile-screen-button"></i>
@@ -62,13 +56,12 @@
                     <i class="fa-sharp fa-solid fa-store"></i>
                     <p class="conteneur-fonctionnement__etape--infos">Dégustez au restaurant</p>
                 </a>
-            </aside>
+            </div>
         </section>
 
-        <!-- MAIN SECTION 3 : Restaurants // VENIR METTRE LES LIENS PAGES MENUS-->
+        <!-- MAIN SECTION 2 : Restaurants-->
         <section class="conteneur-restaurant">
             <h2>Restaurants</h2>
-
             <div class="conteneur-restaurant__choix">
                 <article class="conteneur-restaurant__article">
                     <a href="menu1.html">
@@ -105,7 +98,6 @@
                         </div>
                         <i class="fa-regular fa-heart conteneur-restaurant__article--coeurvide"></i>
                         <i class="fa-solid fa-heart conteneur-restaurant__article--coeurplein"></i>
-
                     </a>
                 </article>
 
