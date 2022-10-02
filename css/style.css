@@ -74,14 +74,14 @@ ul {
 /* HEADER Mobile First - commun page accueil & menu*/
 header {
     text-align: center;
-    padding: 20px 0 10px 0;
+    padding-top: 25px;
 }
 
 .header__logo {
     width: 250px;
+    margin-bottom: 10px;
 }
 
-/*MAIN SECTION 1 RECHERCHE - Mobile First - page accueil*/
 .section-recherche {
     background-color: #EAEAEA;
 }
@@ -109,14 +109,13 @@ input::placeholder {
     color: black;
 }
 
-/* MAIN SECTION 2 ENTREPRISE ET FONCTIONNEMENT - Mobile First - page accueil*/
 .conteneur-entreprise {
     background-color: #F6F6F6;
     text-align: center;
     padding: 40px 40px 80px 40px;
 }
 
-.conteneur-entreprise h2 {
+.conteneur-entreprise h1 {
     margin-bottom: 20px;
     font-size: 30px;
 }
@@ -149,6 +148,7 @@ input::placeholder {
 
 /*fin style bouton accueil et menu*/
 
+/* MAIN SECTION 1 FONCTIONNEMENT - Mobile First - page accueil*/
 .conteneur-fonctionnement {
     padding: 60px 40px;
     background-color: #FFFFFF;
@@ -204,7 +204,7 @@ input::placeholder {
     font-weight: 500;
 }
 
-/* MAIN SECTION 3 RESTAURANTS - Mobile First - page accueil*/
+/* MAIN SECTION 2 RESTAURANTS - Mobile First - page accueil*/
 .conteneur-restaurant {
     background-color: #F6F6F6;
     padding: 60px 40px;
@@ -292,6 +292,7 @@ main{
 .conteneur-header__menu {
     display: flex;
     align-items: center;
+    padding: 20px 0 5px 0;
 }
 
 .conteneur-header__menu i {
@@ -305,7 +306,6 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-right: 60px;
 }
 
 .conteneur-titre {
@@ -494,38 +494,31 @@ footer a:hover {
     margin-right: 15px;
 }
 
-/*MQ TABLETTE 767px > 992px -- PAGE ACCUEIL*/
-@media all and (min-width: 767px) and (max-width: 992px) {
+/*MQ TABLETTE 767px > 1920px -- PAGE ACCUEIL*/
+@media all and (min-width: 767px) and (max-width: 1920px) {
 
     .conteneur-general {
         display: flex;
         text-align: center;
     }
-    .conteneur-entreprise {
-        background-color: white;
-    }
 
-    .conteneur-entreprise, .conteneur-fonctionnement {
-        width: 50%;
+    .conteneur-entreprise {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 40px;
         gap: 30px
     }
 
-    .conteneur-entreprise p, .conteneur-entreprise h2 {
+    .conteneur-entreprise p, .conteneur-entreprise h1 {
         margin-bottom: 0;
-    }
-
-    .conteneur-fonctionnement__etape {
-        padding: 10px 0;
-        margin: 0;
     }
 
     .conteneur-restaurant__choix {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+        margin-top: 25px;
     }
 
     .conteneur-restaurant__article {
@@ -539,41 +532,6 @@ footer a:hover {
 
 /*MQ DESKTOP 993 > 1920px -- Page Accueil*/
 @media all and (min-width: 993px) and (max-width: 1920px) {
-    .conteneur-general {
-        display: flex;
-        text-align: center;
-    }
-    .conteneur-entreprise {
-        background-color: white;
-    }
-
-    .conteneur-entreprise, .conteneur-fonctionnement {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding: 80px 100px;
-        gap: 40px;
-    }
-
-    .conteneur-entreprise p, .conteneur-entreprise h2 {
-        margin-bottom: 0;
-    }
-
-    .conteneur-entreprise__bouton {
-        margin: 0 50px;
-    }
-
-    .conteneur-fonctionnement__etape {
-        padding: 30px 0;
-        margin: 0;
-    }
-
-    .conteneur-restaurant__choix {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 80px;
-    }
-
     .conteneur-restaurant__article img {
         height: 400px;
     }
@@ -587,8 +545,24 @@ footer a:hover {
         padding: 20px;
     }
 
-    footer {
+    .conteneur-fonctionnement h2 {
         text-align: center;
+    }
+
+    .conteneur-fonctionnement__liste {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 50px;
+    }
+
+    .conteneur-fonctionnement__etape {
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    .conteneur-fonctionnement__etape i{
+        margin: 0 20px 0 0;
     }
 
     .footer__logo {
@@ -615,5 +589,4 @@ footer a:hover {
     .conteneur-commander {
         padding-top: 50px;
     }
-
 }
