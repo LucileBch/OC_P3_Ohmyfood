@@ -319,6 +319,8 @@ input::placeholder {
 /*MAIN GENERAL - Mobile first - page menu*/
 main{
     background-color: #F6F6F6;
+    max-width: 1920px;
+    margin: 0;
 }
 
 /*MAIN SECTION 1 TITRE - Mobile First - page menu*/
@@ -342,11 +344,6 @@ main{
 }
 
 /*MAIN SECTION 1 TITRE- Mobile First - page menu*/
-main{
-    max-width: 1920px;
-    margin: auto;
-}
-
 .conteneur-titre {
     position: relative;
 }
