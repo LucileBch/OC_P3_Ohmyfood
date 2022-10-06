@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
+
 /* Mobile First */
 * {
     box-sizing: border-box;
@@ -20,31 +21,7 @@ ul {
     list-style-type: none;
 }
 
-/*Mobile First - Animation Loading Spinner*/
-.conteneur-loading {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(234, 234, 234, 0.8);
-    position: fixed;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    animation: loading 2.7s forwards;
-}
-
-.conteneur-loading__spinner {
-    width: 150px;
-    height: 150px;
-    z-index: 4;
-    border-top: 10px #9356DC double;
-    border-right: 10px #9356DC dashed;
-    border-bottom: 10px #FF79DA double;
-    border-left: 10px #FF79DA dashed;
-    border-radius: 80px;
-    align-self: center;
-    animation: spinner 0.9s linear 3;
-}
-
+/* @KEYFRAMES */
 @keyframes loading {
     0% {
         opacity: 1;
@@ -71,15 +48,70 @@ ul {
     }
 }
 
+@keyframes bouton {
+    0% {
+        box-shadow: 2px 6px 20px 3px lightgrey;
+    }
+    100% {
+        box-shadow: 2px 6px 20px 3px grey;
+    }
+}
+
+@keyframes plat {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+/* Fin @KEYFRAMES */
+
+/*Mobile First - Animation Loading Spinner*/
+.conteneur-loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 234, 234, 0.8);
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    animation: loading 2.7s forwards;
+}
+
+.conteneur-loading__spinner {
+    width: 150px;
+    height: 150px;
+    z-index: 4;
+    border-top: 10px #9356DC double;
+    border-right: 10px #9356DC dashed;
+    border-bottom: 10px #FF79DA double;
+    border-left: 10px #FF79DA dashed;
+    border-radius: 80px;
+    align-self: center;
+    animation: spinner 0.9s linear 3;
+}
+
 /* HEADER Mobile First - commun page accueil & menu*/
 header {
     text-align: center;
     padding-top: 25px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .header__logo {
     width: 250px;
     margin-bottom: 10px;
+}
+
+/* MAIN SECTION 1 ENTREPRISE & FONCTIONNEMENT - Mobile First - page accueil*/
+
+main{
+    max-width: 1920px;
+    margin: auto;
 }
 
 .section-recherche {
@@ -133,7 +165,13 @@ input::placeholder {
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow: 2px 10px 10px lightgrey;
     color: white;
+    transition:all 0.2s ease;
     font-size: 20px;
+}
+
+.conteneur-entreprise__bouton:hover,
+.conteneur-commander__btn:hover{
+    animation: bouton 600ms forwards;
 }
 
 .conteneur-commander {
@@ -145,10 +183,8 @@ input::placeholder {
     padding-left: 60px;
     padding-right: 60px;
 }
-
 /*fin style bouton accueil et menu*/
 
-/* MAIN SECTION 1 FONCTIONNEMENT - Mobile First - page accueil*/
 .conteneur-fonctionnement {
     padding: 60px 40px;
     background-color: #FFFFFF;
@@ -171,9 +207,7 @@ input::placeholder {
 
 .conteneur-fonctionnement__etape:hover {
     background-color: #F5EDFF;
-    box-shadow: 2px 6px 20px 3px grey;
-    transform: scale(1.03);
-    transition: all 400ms;
+    animation: bouton 600ms forwards;
 }
 
 .conteneur-fonctionnement__etape .numero {
@@ -219,8 +253,7 @@ input::placeholder {
 }
 
 .conteneur-restaurant__article:hover {
-    transition: transform 600ms;
-    transform: scale(1.03);
+    animation: bouton 600ms forwards;
 }
 
 .conteneur-restaurant__article img {
@@ -308,6 +341,12 @@ main{
     width: 100%;
 }
 
+/*MAIN SECTION 1 TITRE- Mobile First - page menu*/
+main{
+    max-width: 1920px;
+    margin: auto;
+}
+
 .conteneur-titre {
     position: relative;
 }
@@ -335,6 +374,7 @@ main{
     font-size: 32px;
     font-weight: 100;
     margin-left: 20px;
+    width:70%;
 }
 
 .conteneur-titre i {
@@ -381,25 +421,15 @@ main{
 .numero3 {
     animation-delay: 900ms;
 }
+
 .numero4 {
     animation-delay: 1200ms;
-}
-
-/*ANIMATION Apparition liste plats - page menu*/
-@keyframes plat {
-    0% {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
 }
 /*FIN ANIMATION Apparition liste plats - page menu*/
 
 .conteneur-menu__choix:hover {
     box-shadow: 2px 6px 20px 3px grey;
+    transition: box-shadow 600ms;
     cursor: pointer;
 }
 
@@ -459,11 +489,12 @@ main{
     transform: rotate(360deg);
 }
 
-
 /*FOOTER - Mobile First - commun page accueil & menu*/
 footer {
     background-color: #353535;
     padding: 40px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .footer__logo {
