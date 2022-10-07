@@ -606,7 +606,7 @@ footer a:hover {
 /*MQ DESKTOP 993 > 1920px -- Page Menu*/
     .conteneur-menu {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: calc(50% - 25px) calc(50% - 25px);
         column-gap: 50px;
     }
 
