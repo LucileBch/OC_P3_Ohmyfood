@@ -380,7 +380,7 @@ main{
 
 /*MAIN SECTION 2-3-4 ENTREES-PLATS-DESSERTS - Mobile First - page menu*/
 .conteneur-menu {
-    padding: 20px 30px;
+    padding: 20px 15px;
 }
 
 .conteneur-menu__carte {
@@ -439,7 +439,7 @@ main{
 
 .conteneur-menu__choix h3 {
     line-height: 35px;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
@@ -447,7 +447,7 @@ main{
 }
 
 .conteneur-menu__choix .infos {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
     white-space: nowrap;
     overflow: hidden;
@@ -459,7 +459,7 @@ main{
     align-items: flex-end;
     margin-left: auto;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 16px;
     padding: 15px;
 }
 
@@ -467,8 +467,8 @@ main{
     font-size: 27px;
     color: white;
     background-color: #99E2D0;
-    width: 100px;
-    margin-right: -100px;
+    width: 80px;
+    margin-right: -80px;
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-shrink: 0;
@@ -616,5 +616,19 @@ footer a:hover {
 
     .conteneur-commander {
         padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .conteneur-menu h2 {
+        font-size: 18px;
+    }
+    
+    .conteneur-menu__choix h3 {
+        font-size: 14px;
+    }
+
+    .conteneur-menu__choix .infos {
+        font-size: 12px;
     }
 }
